@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Nair — Digital Marketing & Creative Agency</title>
+<meta name="description" content="Full-service digital marketing & creative agency: branding, web design, video production, animation, social media, SEO & ads. Founded by Vishnu B Nair.">
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&f[]=general-sans@400,500,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a10; --bg2:#101018; --card:#14141e; --line:rgba(255,255,255,.08);
+  --txt:#eceafb; --mut:#9a97b8;
+  --vio:#8b5cf6; --cyn:#22d3ee; --mag:#f472b6;
+  --grad:linear-gradient(100deg,#8b5cf6,#22d3ee);
+  --r:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'General Sans',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E")}
+h1,h2,h3,.disp{font-family:'Clash Display',sans-serif;font-weight:600;line-height:1.08;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyn);margin-bottom:18px}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--cyn)}
+h2{font-size:clamp(32px,5vw,52px);margin-bottom:16px}
+.sub{color:var(--mut);max-width:560px;font-size:17px}
+.grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 28px;border-radius:100px;font-weight:600;font-size:15px;transition:.3s;cursor:pointer;border:none}
+.btn-grad{background:var(--grad);color:#0a0a10}
+.btn-grad:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(139,92,246,.4)}
+.btn-ghost{border:1px solid var(--line);color:var(--txt)}
+.btn-ghost:hover{border-color:var(--vio);background:rgba(139,92,246,.08)}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;backdrop-filter:blur(16px);background:rgba(10,10,16,.7);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:'Clash Display';font-weight:700;font-size:22px}
+.logo span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nav-links{display:flex;gap:32px;font-size:14px;color:var(--mut)}
+.nav-links a:hover{color:var(--txt)}
+.burger{display:none;background:none;border:none;color:var(--txt);font-size:26px;cursor:pointer}
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;padding-top:72px;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.35;animation:float 14s ease-in-out infinite}
+.b1{width:520px;height:520px;background:var(--vio);top:-120px;right:-120px}
+.b2{width:420px;height:420px;background:var(--cyn);bottom:-100px;left:-100px;animation-delay:-7s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(40px,-40px) scale(1.1)}}
+.hero h1{font-size:clamp(44px,8vw,96px);margin:0 0 22px}
+.hero p{font-size:19px;color:var(--mut);max-width:540px;margin-bottom:36px}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.reveal.in{opacity:1;transform:none}
+/* MARQUEE */
+.marquee{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;margin-top:72px}
+.marquee-track{display:flex;gap:64px;width:max-content;animation:mq 28s linear infinite;font-family:'Clash Display';font-size:20px;color:var(--mut);white-space:nowrap}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* BENTO */
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:32px;transition:.3s}
+.stat:hover{border-color:rgba(139,92,246,.4);transform:translateY(-4px)}
+.stat b{font-family:'Clash Display';font-size:clamp(36px,4vw,52px);display:block;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{color:var(--mut);font-size:14px}
+/* SERVICES */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:32px;position:relative;overflow:hidden;transition:.35s}
+.svc:hover{transform:translateY(-6px);border-color:rgba(34,211,238,.4)}
+.svc .ico{width:48px;height:48px;border-radius:14px;background:rgba(139,92,246,.15);display:grid;place-items:center;font-size:22px;margin-bottom:18px}
+.svc h3{font-size:21px;margin-bottom:10px}
+.svc p{color:var(--mut);font-size:14.5px}
+.svc.big{grid-column:span 2;background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(34,211,238,.08)),var(--card)}
+/* WORK — horizontal scroll */
+.hscroll{display:flex;gap:20px;overflow-x:auto;padding:8px 24px 24px;scroll-snap-type:x mandatory;scrollbar-width:none}
+.hscroll::-webkit-scrollbar{display:none}
+.work-card{flex:0 0 min(420px,82vw);scroll-snap-align:start;border-radius:var(--r);overflow:hidden;border:1px solid var(--line);background:var(--card);cursor:pointer;transition:.35s}
+.work-card:hover{transform:translateY(-6px);border-color:rgba(139,92,246,.5)}
+.thumb{aspect-ratio:16/10;background-size:cover;background-position:center;position:relative}
+.thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(10,10,16,.85))}
+.work-meta{padding:18px 22px}
+.tag{display:inline-block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--cyn);border:1px solid rgba(34,211,238,.35);border-radius:100px;padding:3px 12px;margin-bottom:8px}
+/* VISHNU teaser */
+.vishnu{display:grid;grid-template-columns:1fr 1.2fr;gap:56px;align-items:center;background:var(--card);border:1px solid var(--line);border-radius:28px;padding:56px;position:relative;overflow:hidden}
+.vishnu::before{content:"";position:absolute;width:380px;height:380px;background:var(--vio);filter:blur(120px);opacity:.25;top:-100px;right:-100px}
+.avatar{aspect-ratio:1;border-radius:24px;background:linear-gradient(135deg,#2b2350,#0f3a44);display:grid;place-items:center;font-family:'Clash Display';font-size:80px;color:rgba(255,255,255,.25)}
+/* PORTFOLIO */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 8px}
+.chip{font-size:13px;padding:7px 16px;border-radius:100px;border:1px solid var(--line);color:var(--mut)}
+.filters{display:flex;flex-wrap:wrap;gap:10px;margin:36px 0 28px}
+.fbtn{padding:9px 20px;border-radius:100px;border:1px solid var(--line);background:none;color:var(--mut);font-size:14px;cursor:pointer;transition:.25s;font-family:inherit}
+.fbtn.active,.fbtn:hover{background:var(--grad);color:#0a0a10;border-color:transparent;font-weight:600}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.pitem{border-radius:var(--r);overflow:hidden;position:relative;aspect-ratio:4/3;cursor:pointer;border:1px solid var(--line)}
+.pitem .bgc{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .5s}
+.pitem:hover .bgc{transform:scale(1.06)}
+.pitem .ov{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(10,10,16,.92));opacity:0;transition:.35s;display:flex;flex-direction:column;justify-content:flex-end;padding:22px}
+.pitem:hover .ov{opacity:1}
+.pitem.hidden{display:none}
+/* MODAL */
+.modal{position:fixed;inset:0;z-index:200;background:rgba(6,6,12,.9);backdrop-filter:blur(10px);display:none;align-items:flex-start;justify-content:center;overflow-y:auto;padding:48px 20px}
+.modal.open{display:flex}
+.modal-in{background:var(--bg2);border:1px solid var(--line);border-radius:24px;max-width:860px;width:100%;padding:40px;position:relative}
+.mclose{position:absolute;top:18px;right:18px;background:var(--card);border:1px solid var(--line);color:var(--txt);width:40px;height:40px;border-radius:50%;font-size:18px;cursor:pointer}
+.mcover{aspect-ratio:16/8;border-radius:16px;background-size:cover;background-position:center;margin-bottom:28px}
+.mmeta{display:flex;flex-wrap:wrap;gap:24px;color:var(--mut);font-size:14px;margin:14px 0 24px}
+.mmeta b{color:var(--txt);display:block;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+/* WHY US */
+.cmp{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.cmp th,.cmp td{padding:16px 20px;border-bottom:1px solid var(--line);text-align:left;font-size:15px}
+.cmp th{background:var(--card);font-family:'Clash Display';font-size:16px}
+.cmp td:nth-child(2){color:var(--cyn)}
+.cmp td:nth-child(3){color:var(--mut)}
+/* TESTIMONIALS */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.tcard{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.stars{color:#fbbf24;letter-spacing:2px;margin-bottom:12px}
+.tcard p{color:var(--mut);font-size:15px;margin-bottom:16px}
+.tcard b{font-size:14px}
+.tcard span{display:block;font-size:12.5px;color:var(--mut)}
+/* FAQ */
+.faq{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;background:var(--card)}
+.faq summary{padding:20px 24px;cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary::after{content:"+";font-size:22px;color:var(--vio);transition:.3s}
+.faq[open] summary::after{transform:rotate(45deg)}
+.faq div{padding:0 24px 20px;color:var(--mut);font-size:15px}
+/* CTA */
+.cta-banner{background:linear-gradient(120deg,rgba(139,92,246,.2),rgba(34,211,238,.12)),var(--card);border:1px solid rgba(139,92,246,.3);border-radius:28px;padding:64px;text-align:center}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.form input,.form textarea{width:100%;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;color:var(--txt);font-family:inherit;font-size:15px;margin-bottom:14px}
+.form input:focus,.form textarea:focus{outline:none;border-color:var(--vio)}
+.socials{display:flex;gap:12px;margin-top:20px}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:.3s}
+.socials a:hover{background:var(--grad);color:#0a0a10;border-color:transparent}
+footer{border-top:1px solid var(--line);padding:48px 0;color:var(--mut);font-size:14px}
+.foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px}
+/* WhatsApp float */
+.wa{position:fixed;bottom:24px;right:24px;z-index:90;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;font-size:28px;box-shadow:0 8px 24px rgba(37,211,102,.4)}
+@media(max-width:900px){
+  .nav-links{display:none;position:absolute;top:72px;left:0;right:0;background:var(--bg2);flex-direction:column;padding:24px;gap:18px;border-bottom:1px solid var(--line)}
+  .nav-links.open{display:flex}
+  .burger{display:block}
+  .bento{grid-template-columns:repeat(2,1fr)}
+  .svc-grid,.pgrid,.tgrid{grid-template-columns:1fr 1fr}
+  .svc.big{grid-column:span 2}
+  .vishnu,.contact-grid{grid-template-columns:1fr;padding:32px}
+  section{padding:64px 0}
+}
+@media(max-width:600px){.svc-grid,.pgrid,.tgrid{grid-template-columns:1fr}.svc.big{grid-column:span 1}.cta-banner{padding:40px 24px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-in">
+    <a href="#home" class="logo">Studio<span>Nair</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+      <a href="#work">Work</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
+    </div>
+    <div style="display:flex;gap:12px;align-items:center">
+      <a class="btn btn-grad" style="padding:10px 20px;font-size:13px" href="https://wa.me/971500000000" target="_blank">Get a Free Quote</a>
+      <button class="burger" onclick="document.getElementById('navLinks').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap">
+    <div class="eyebrow reveal">Digital Marketing · Creative Studio</div>
+    <h1 class="reveal">We build brands<br>that <span class="grad-text">move people.</span></h1>
+    <p class="reveal">Branding, web design, video production, animation and performance marketing — crafted end-to-end by a studio obsessed with results.</p>
+    <div class="reveal" style="display:flex;gap:14px;flex-wrap:wrap">
+      <a class="btn btn-grad" href="https://wa.me/971500000000" target="_blank">Start your project →</a>
+      <a class="btn btn-ghost" href="#work">See our work</a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee">
+  <div class="marquee-track" id="mq">
+    <span>ACME GROUP</span><span>NOVA RETAIL</span><span>ZEN FITNESS</span><span>ORBIT TECH</span><span>PALM HOSPITALITY</span><span>KOVE REALTY</span><span>LUMEN CLINIC</span><span>ATLAS LOGISTICS</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<section>
+  <div class="wrap bento">
+    <div class="stat reveal"><b data-count="250">0</b><span>Projects completed</span></div>
+    <div class="stat reveal"><b data-count="120">0</b><span>Happy clients</span></div>
+    <div class="stat reveal"><b data-count="8">0</b><span>Years of experience</span></div>
+    <div class="stat reveal"><b data-count="12">0</b><span>Countries served</span></div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">What we do</div>
+    <h2>Full-service, <span class="grad-text">zero fluff.</span></h2>
+    <p class="sub" style="margin-bottom:44px">Everything your brand needs to look sharp, sound right, and sell more — under one roof.</p>
+    <div class="svc-grid">
+      <div class="svc big reveal"><div class="ico">✦</div><h3>Branding & Identity</h3><p>Logos, brand systems, guidelines and company profiles that make your business unforgettable — the foundation every other channel builds on.</p></div>
+      <div class="svc reveal"><div class="ico">🖥</div><h3>Web Design & Development</h3><p>Fast, conversion-focused websites built on modern stacks with flawless mobile UX.</p></div>
+      <div class="svc reveal"><div class="ico">🎬</div><h3>Video Production</h3><p>Corporate films, product videos, reels and ad creatives shot and edited in-house.</p></div>
+      <div class="svc reveal"><div class="ico">✨</div><h3>Motion & Animation</h3><p>Logo animation, explainers, 3D and motion graphics that stop the scroll.</p></div>
+      <div class="svc reveal"><div class="ico">📱</div><h3>Social Media Marketing</h3><p>Content calendars, design, reels and community management that grow real audiences.</p></div>
+      <div class="svc reveal"><div class="ico">📈</div><h3>SEO & Google Ads</h3><p>Search visibility and paid campaigns tuned for leads, not vanity metrics.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:end;flex-wrap:wrap;gap:16px">
+    <div><div class="eyebrow">Featured work</div><h2>Case studies</h2></div>
+    <p class="sub" style="max-width:340px;font-size:15px">Drag or scroll sideways — every project opens a full story.</p>
+  </div>
+  <div class="hscroll" id="workScroll"></div>
+</section>
+
+<!-- VISHNU TEASER -->
+<section id="about" style="padding-top:0">
+  <div class="wrap">
+    <div class="vishnu reveal">
+      <div class="avatar">VN</div>
+      <div>
+        <div class="eyebrow">Meet the founder</div>
+        <h2 style="font-size:clamp(28px,4vw,42px)">Vishnu B Nair</h2>
+        <p class="sub" style="margin:12px 0 24px">Graphic designer & motion storyteller with 8+ years crafting brands, campaigns and films for clients across the GCC and India.</p>
+        <a class="btn btn-ghost" href="#portfolio">View full portfolio →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">Personal showcase</div>
+    <h2 style="font-size:clamp(40px,7vw,72px)">Vishnu <span class="grad-text">B Nair</span></h2>
+    <p class="sub">Graphic Designer · Motion & Brand Storyteller</p>
+    <div class="chips">
+      <span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">After Effects</span>
+      <span class="chip">Premiere Pro</span><span class="chip">Figma</span><span class="chip">Cinema 4D</span>
+    </div>
+    <div class="filters" id="filters">
+      <button class="fbtn active" data-f="all">All</button>
+      <button class="fbtn" data-f="brand">Branding & Logo</button>
+      <button class="fbtn" data-f="print">Print & Brochure</button>
+      <button class="fbtn" data-f="social">Social Media</button>
+      <button class="fbtn" data-f="video">Video Editing</button>
+      <button class="fbtn" data-f="motion">Motion Graphics</button>
+      <button class="fbtn" data-f="pack">Packaging</button>
+    </div>
+    <div class="pgrid" id="pgrid"></div>
+    <div style="text-align:center;margin-top:56px">
+      <h3 style="font-size:28px;margin-bottom:18px">Like what you see? Let's create something together.</h3>
+      <a class="btn btn-grad" href="https://wa.me/971500000000" target="_blank">Message on WhatsApp →</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section>
+  <div class="wrap">
+    <div class="eyebrow">Why choose us</div>
+    <h2>Us vs. the rest</h2>
+    <div style="overflow-x:auto;margin-top:36px">
+      <table class="cmp">
+        <tr><th></th><th>Studio Nair</th><th>Typical agencies</th></tr>
+        <tr><td>Design + video + marketing in one team</td><td>✔ In-house, end to end</td><td>✖ Outsourced patchwork</td></tr>
+        <tr><td>Turnaround</td><td>✔ Days, not months</td><td>✖ Slow approval chains</td></tr>
+        <tr><td>Communication</td><td>✔ Direct WhatsApp access</td><td>✖ Account-manager relay</td></tr>
+        <tr><td>Pricing</td><td>✔ Transparent, project-based</td><td>✖ Hidden retainers</td></tr>
+        <tr><td>Reporting</td><td>✔ Real metrics, monthly</td><td>✖ Vanity screenshots</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="eyebrow">Testimonials</div>
+    <h2 style="margin-bottom:40px">Clients talk</h2>
+    <div class="tgrid">
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"The rebrand transformed how customers see us. Enquiries doubled within three months of launch."</p><b>Sara M.</b><span>Marketing Head, Nova Retail</span></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"Fast, creative and genuinely invested in our results. The launch video alone paid for itself."</p><b>Ahmed K.</b><span>Founder, Orbit Tech</span></div>
+      <div class="tcard reveal"><div class="stars">★★★★★</div><p>"Vishnu understood our brand better than we did. Every deliverable was on time and on point."</p><b>Priya R.</b><span>Director, Lumen Clinic</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section>
+  <div class="wrap" style="max-width:820px">
+    <div class="eyebrow">FAQ</div>
+    <h2 style="margin-bottom:36px">Quick answers</h2>
+    <details class="faq"><summary>How long does a branding project take?</summary><div>Most identity projects take 2–4 weeks depending on scope — logo, guidelines, stationery and social kit included.</div></details>
+    <details class="faq"><summary>Do you work with clients outside the UAE?</summary><div>Yes — we work remotely with clients across the GCC, India, Europe and beyond. Everything runs through WhatsApp, email and shared review links.</div></details>
+    <details class="faq"><summary>What does a website cost?</summary><div>It depends on pages and features. Send us your brief on WhatsApp and you'll get a transparent, itemised quote within 24 hours — free.</div></details>
+    <details class="faq"><summary>Can you manage our social media monthly?</summary><div>Yes. We offer monthly packages covering strategy, design, reels, posting and reporting.</div></details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-banner reveal">
+      <h2>Ready to grow your brand?</h2>
+      <p class="sub" style="margin:0 auto 28px">Tell us where you are and where you want to be — we'll map the route.</p>
+      <a class="btn btn-grad" href="https://wa.me/971500000000" target="_blank">Get a free quote →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:var(--bg2)">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h2>Let's talk.</h2>
+      <p class="sub" style="margin-bottom:20px">Dubai, UAE · Mon–Sat, 9am–7pm<br>hello@studionair.com</p>
+      <div class="socials">
+        <a href="#" aria-label="WhatsApp">🟢</a><a href="#" aria-label="Instagram">📸</a>
+        <a href="#" aria-label="LinkedIn">💼</a><a href="#" aria-label="Behance">🎨</a>
+      </div>
+    </div>
+    <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input name="name" placeholder="Name" required>
+      <input name="email" type="email" placeholder="Email" required>
+      <input name="phone" placeholder="Phone / WhatsApp">
+      <input name="company" placeholder="Company">
+      <textarea name="message" rows="4" placeholder="Tell us about your project" required></textarea>
+      <button class="btn btn-grad" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div><span class="logo" style="font-size:18px">Studio<span style="background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent">Nair</span></span><br>© 2026 Studio Nair. All rights reserved.</div>
+    <div style="display:flex;gap:24px"><a href="#services">Services</a><a href="#work">Work</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a></div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/971500000000" target="_blank" aria-label="Chat on WhatsApp">💬</a>
+
+<!-- MODAL -->
+<div class="modal" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-in">
+    <button class="mclose" onclick="closeModal()">✕</button>
+    <div class="mcover" id="mcover"></div>
+    <span class="tag" id="mtag"></span>
+    <h2 id="mtitle" style="font-size:32px"></h2>
+    <div class="mmeta">
+      <div><b>Client</b><span id="mclient"></span></div>
+      <div><b>Year</b><span id="myear"></span></div>
+      <div><b>Tools</b><span id="mtools"></span></div>
+    </div>
+    <p style="color:var(--mut)" id="mdesc"></p>
+    <div style="display:flex;justify-content:space-between;margin-top:32px">
+      <button class="btn btn-ghost" onclick="navProject(-1)">← Previous</button>
+      <button class="btn btn-ghost" onclick="navProject(1)">Next →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// gradient placeholder generator
+const grad = (a,b)=>`linear-gradient(135deg,${a},${b})`;
+const palettes=[["#3b2a6e","#0e4a56"],["#5b2160","#153a63"],["#1e3a5f","#4a1e5f"],["#2d1b4e","#0b4f4a"],["#4a2545","#1a3a5c"],["#241b52","#0d4740"],["#3d1f5c","#164e63"],["#301b4d","#0e3d5e"]];
+
+const projects=[
+ {t:"Kove Realty — Brand Identity",c:"Kove Realty",cat:"brand",tagL:"Branding & Logo",y:"2026",tools:"Illustrator, Figma",d:"Complete rebrand for a Dubai real-estate boutique: logo system, stationery, signage and a 40-page brand guideline. Enquiries rose 60% post-launch."},
+ {t:"Zen Fitness — Launch Reel",c:"Zen Fitness",cat:"video",tagL:"Video Editing",y:"2026",tools:"Premiere Pro, After Effects",d:"High-energy 45-second launch film cut for Instagram and outdoor screens, driving 2,000+ sign-ups in the opening month."},
+ {t:"Orbit Tech — Explainer Animation",c:"Orbit Tech",cat:"motion",tagL:"Motion Graphics",y:"2025",tools:"After Effects, Cinema 4D",d:"90-second animated explainer distilling a complex SaaS product into a story investors and customers instantly get."},
+ {t:"Palm Hospitality — Company Profile",c:"Palm Hospitality",cat:"print",tagL:"Print & Brochure",y:"2025",tools:"InDesign, Photoshop",d:"32-page premium company profile with custom photography direction, printed and digital editions."},
+ {t:"Lumen Clinic — Social System",c:"Lumen Clinic",cat:"social",tagL:"Social Media",y:"2026",tools:"Photoshop, Figma",d:"A modular social template system and 3-month content calendar that grew the clinic's Instagram by 340%."},
+ {t:"Nova Retail — Packaging Line",c:"Nova Retail",cat:"pack",tagL:"Packaging",y:"2025",tools:"Illustrator, Dimension",d:"Packaging refresh across 12 SKUs with a shelf-pop colour system and sustainable material specs."},
+ {t:"Atlas Logistics — Website Rebrand",c:"Atlas Logistics",cat:"brand",tagL:"Branding & Logo",y:"2024",tools:"Figma, Illustrator",d:"Identity and web refresh positioning a 20-year logistics firm for its next decade."},
+ {t:"Acme Group — Event Aftermovie",c:"Acme Group",cat:"video",tagL:"Video Editing",y:"2026",tools:"Premiere Pro, DaVinci",d:"Cinematic 2-minute aftermovie for a 3,000-guest corporate summit, delivered in 48 hours."},
+ {t:"Festival Ident — Logo Animation",c:"City Arts Fest",cat:"motion",tagL:"Motion Graphics",y:"2025",tools:"After Effects",d:"Playful kinetic ident package: stings, lower-thirds and countdowns used across the festival's screens."}
+];
+
+// Featured work rail (first 6)
+const ws=document.getElementById('workScroll');
+projects.slice(0,6).forEach((p,i)=>{
+  const el=document.createElement('div');el.className='work-card reveal';
+  el.innerHTML=`<div class="thumb" style="background:${grad(...palettes[i%palettes.length])}"></div>
+  <div class="work-meta"><span class="tag">${p.tagL}</span><h3 style="font-size:19px">${p.t}</h3></div>`;
+  el.onclick=()=>openModal(i);ws.appendChild(el);
+});
+
+// Portfolio grid
+const pg=document.getElementById('pgrid');
+projects.forEach((p,i)=>{
+  const el=document.createElement('div');el.className='pitem reveal';el.dataset.cat=p.cat;
+  el.innerHTML=`<div class="bgc" style="background:${grad(...palettes[(i+3)%palettes.length])}"></div>
+  <div class="ov"><span class="tag">${p.tagL}</span><h3 style="font-size:18px">${p.t}</h3></div>`;
+  el.onclick=()=>openModal(i);pg.appendChild(el);
+});
+
+// Filters
+document.getElementById('filters').addEventListener('click',e=>{
+  if(!e.target.dataset.f)return;
+  document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('active'));
+  e.target.classList.add('active');
+  const f=e.target.dataset.f;
+  document.querySelectorAll('.pitem').forEach(it=>it.classList.toggle('hidden',f!=='all'&&it.dataset.cat!==f));
+});
+
+// Modal
+let cur=0;
+function openModal(i){
+  cur=i;const p=projects[i];
+  mcover.style.background=grad(...palettes[i%palettes.length]);
+  mtag.textContent=p.tagL;mtitle.textContent=p.t;mclient.textContent=p.c;
+  myear.textContent=p.y;mtools.textContent=p.tools;mdesc.textContent=p.d;
+  modal.classList.add('open');document.body.style.overflow='hidden';
+}
+function closeModal(){modal.classList.remove('open');document.body.style.overflow=''}
+function navProject(d){openModal((cur+d+projects.length)%projects.length)}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+// Marquee duplicate
+mq.innerHTML+=mq.innerHTML;
+
+// Scroll reveals
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// Count-up stats
+const io2=new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting)return;io2.unobserve(e.target);
+  const end=+e.target.dataset.count;let n=0;const step=Math.max(1,Math.ceil(end/60));
+  const t=setInterval(()=>{n+=step;if(n>=end){n=end;clearInterval(t)}e.target.textContent=n+"+"},24);
+}),{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>io2.observe(el));
+</script>
+</body>
+</html>

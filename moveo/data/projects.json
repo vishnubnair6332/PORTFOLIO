@@ -1,0 +1,98 @@
+[
+  {
+    "id": "auraveda",
+    "t": "Auraveda Rebrand",
+    "c": "Branding & Logo",
+    "client": "Auraveda Wellness",
+    "year": "2026",
+    "tools": "Illustrator \u00b7 Figma",
+    "brief": "An ayurvedic wellness brand needed to shed its dated look and appeal to a younger, premium audience.",
+    "process": "Competitor mapping, 3 logo concept rounds, then a full identity system: color, type, packaging and social templates.",
+    "result": "Retail presence in 40+ stores and a 3x lift in social engagement post-launch.",
+    "cover": ""
+  },
+  {
+    "id": "fluxpay",
+    "t": "FluxPay Launch Film",
+    "c": "Motion Graphics",
+    "client": "FluxPay",
+    "year": "2025",
+    "tools": "After Effects \u00b7 Cinema 4D",
+    "brief": "A fintech startup needed a 60-second launch animation explaining a complex product simply.",
+    "process": "Scripted with founders, storyboarded 24 frames, custom 3D card-and-particle system, scored in-house.",
+    "result": "2.1M views across platforms in the launch month.",
+    "cover": ""
+  },
+  {
+    "id": "kaapi",
+    "t": "Kaapi Co. Packaging",
+    "c": "Packaging",
+    "client": "Kaapi Co.",
+    "year": "2025",
+    "tools": "Illustrator \u00b7 Photoshop",
+    "brief": "A specialty coffee roaster wanted packaging that told each farm's origin story.",
+    "process": "Custom pattern per origin, modular label system that scales to new blends.",
+    "result": "Featured in two regional design showcases; repeat purchase rate up 22%.",
+    "cover": ""
+  },
+  {
+    "id": "northpeak",
+    "t": "Northpeak Social System",
+    "c": "Social Media Design",
+    "client": "Northpeak Realty",
+    "year": "2026",
+    "tools": "Figma \u00b7 Photoshop",
+    "brief": "A real-estate brand posting inconsistent, off-brand content across 4 channels.",
+    "process": "30-template social design system with locked brand rules the internal team can run alone.",
+    "result": "Consistent output at 5x speed; follower growth up 60% in 4 months.",
+    "cover": ""
+  },
+  {
+    "id": "orbit",
+    "t": "Orbit Fitness Reel Edits",
+    "c": "Video Editing",
+    "client": "Orbit Fitness",
+    "year": "2025",
+    "tools": "Premiere Pro \u00b7 DaVinci",
+    "brief": "Monthly retainer editing high-energy fitness reels optimized for retention.",
+    "process": "Signature cut style: whip transitions, punch-in beats, captions system. 12 reels/month.",
+    "result": "Average watch-through up from 31% to 58%.",
+    "cover": ""
+  },
+  {
+    "id": "lumen",
+    "t": "Lumen Clinic Brochure",
+    "c": "Print & Brochure",
+    "client": "Lumen Clinic",
+    "year": "2024",
+    "tools": "InDesign \u00b7 Photoshop",
+    "brief": "A 24-page patient-facing brochure and company profile for a premium clinic.",
+    "process": "Editorial grid system, custom iconography, medical photography art direction.",
+    "result": "Now the clinic's primary sales asset for corporate partnerships.",
+    "cover": ""
+  },
+  {
+    "id": "zenlayer",
+    "t": "Zenlayer Dashboard UI",
+    "c": "UI-UX",
+    "client": "Zenlayer",
+    "year": "2026",
+    "tools": "Figma",
+    "brief": "Redesign a cluttered analytics dashboard for clarity and speed.",
+    "process": "User interviews, IA restructure, dark-mode component library of 80+ components.",
+    "result": "Support tickets about 'finding things' dropped 40%.",
+    "cover": ""
+  },
+  {
+    "id": "marhaba",
+    "t": "Marhaba Foods Idents",
+    "c": "Motion Graphics",
+    "client": "Marhaba Foods",
+    "year": "2025",
+    "tools": "After Effects",
+    "brief": "A family of 5-second animated logo idents for TV and digital.",
+    "process": "Explored 6 motion behaviors for the wordmark; delivered motion-identity guidelines.",
+    "result": "Used across all broadcast and digital touchpoints.",
+    "cover": ""
+  }
+]
